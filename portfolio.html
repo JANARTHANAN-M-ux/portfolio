@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janarthanan Murugan</title>
+   <!-- <link rel="stylesheet" href="style.css"-->
+   <style>
+    body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #a7fafa;
+}
+
+#home {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNUaubZe4sfM3_J4lUl3euQAPL4XDOfP7Org&usqp=CAU');
+    background-color: #8ef8e6;
+    color: #fffdfd;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+#next{
+    color: #f1f3f5;
+}
+#color {
+    color: #f1f3f5;
+}
+#logo{ 
+	position:fixed; 
+	top:20; 
+	left:0; 
+} 
+.skills-bar {
+  margin-left: 400px;
+  padding: 25px 30px;
+}
+
+.skills-bar .bar {
+  margin: 25px 0;
+}
+
+.skills-bar .bar .info span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 8px;
+  color: #0e0e0d;
+}
+
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 10px;
+  width: 550px;
+  background: #f8f8f7;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+  position: absolute;
+  background: #034e4e;
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.progress-line .html
+{
+  width: 90%;
+}
+.progress-line .css {
+  width: 80%;
+}
+.progress-line .bootstrap {
+  width: 50%;
+}
+.progress-line .javascript {
+  width: 70%;
+}
+.progress-line .c {
+  width: 90%;
+}
+.progress-line .java {
+  width: 95%;
+}
+.progress-line .sql {
+  width: 90%;
+}
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -12px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f3f0f0;
+  border-top-color: #f8f3f3;
+}
+
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #07374a;
+  font-size: 12px;
+  font-weight: 700;
+  background: #f0f0f0;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+.progress-line .html::after {
+  content: "90%";
+}
+.progress-line .css::after {
+  content: "80%";
+}
+.progress-line .bootstrap::after {
+  content: "50%";
+}
+.progress-line .javascript::after {
+  content: "70%";
+}
+.progress-line .c::after {
+  content: "90%";
+}
+.progress-line .java::after {
+  content: "95%";
+}
+.progress-line .sql::after {
+  content: "90%";
+}
+
+nav {
+    background-color: #444;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+section {
+    padding: 2rem;
+}
+
+.projects-container {
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+#name {
+    background: #73eeee;
+    
+}
+
+.project {
+   background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHpiuVt31WJU0riWJwfkPD1qUs7pDrzYuyZ4roXYq4AFOb2HpC');
+    flex: 1 0 30%;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(255, 198, 198, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.project2 {
+    color: #07374a;
+    background-image: url('https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/BS%20VI%20Bus%20Single%20Axcel_Single%20Bus?wid=1400&fit=constrain');
+    flex: 1 0 30%;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(255, 198, 198, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.project3 {
+    color: #fbfcfd;
+    background-image: url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://img.freepik.com/free-photo/luxury-bedroom-suite-resort-high-rise-hotel-with-working-table_105762-1783.jpg?w=826&t=st=1710822820~exp=1710823420~hmac=378cfe8d3afda68a209af980359825a1bec0454d409cb358fe2c2bf511f8afb6');
+    flex: 1 0 30%;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(255, 198, 198, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.more-work {
+ 
+font-family:'Times New Roman', Times, serif;
+  text-align: center;
+  margin: 3rem 0 1rem 0;
+}
+
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project-details {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#contact {
+ 
+    text-align: center;
+    padding: 1rem;
+    background-color: #77c7ee;
+    color: #141414;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+   </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 id="color">Hello There!!!</h1>
+        <p><h2>Iam<br>Janarthanan M</h2>
+            Web Developer
+        <h2 id="color">Welcome to My Portfolio</h2></p>
+        <div class="work-arrow">
+          <h3>
+            <a href="#about" id="next">Next<i class="fas fa-arrow-down"></i></a>
+          </h3>
+        </div>
+       </section>
+
+    <section id="about">
+        <center><h1>About me</h1>
+            <marquee><img src="https://logos.textgiraffe.com/logos/logo-name/Janarthanan-designstyle-popstar-m.png" /></marquee></center>
+        <h2><center>Hi, I'm Janarthanan, a passionate and motivated  engineering student with a focus on to become a software developer.I have a keen interest in software development, and I'm always eager to learn and explore new technologies.</center>
+          <center>Iam 19 year old and Iam studying BE in Karpagam College of Engineering. I really enjoy solving problems as well as making things pretty and easy to use. I can't stop learning new things; the more, the better.</center></h2><br>
+        <center><h1>My skills</h1></center>
+        <div class="skills-bar">
+            <div class="bar">
+              <div class="info">
+                <span>HTML</span>
+              </div>
+              <div class="progress-line"><span class="html"></span></div>
+              <div class="bar">
+                <div class="info">
+                  <span>CSS</span>
+                </div>
+                <div class="progress-line"><span class="css"></span></div>
+                <div class="bar">
+                  <div class="info">
+                    <span>BOOTSTRAP</span>
+                  </div>
+                  <div class="progress-line"><span class="bootstrap"></span></div>
+                  <div class="bar">
+                    <div class="info">
+                      <span>JAVASCRIPT</span>
+                    </div>
+                    <div class="progress-line"><span class="javascript"></span></div>
+                    <div class="bar">
+                      <div class="info">
+                        <span>C Programming</span>
+                      </div>
+                      <div class="progress-line"><span class="javascript"></span></div>
+                    <div class="bar">
+                      <div class="info">
+                        <span>JAVA Programming</span>
+                      </div>
+                      <div class="progress-line"><span class="javascript"></span></div>
+                    <div class="bar">
+                      <div class="info">
+                        <span>SQL</span>
+                      </div>
+                      <div class="progress-line"><span class="c"></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    <div id="name">
+    <section id="projects">
+        <h2><center>Projects</center></h2>
+        <div class="projects-container">
+            <div class="project" onclick="showProjectDetails(1)">
+                <h3>Project 1</h3>
+                <h3><a href="https://github.com/JANARTHANAN-M-ux/Netflix-clone-website">Netflix</a><br><br>Netflix Clone Website</h3>
+                <p>Build using HTML,CSS,JAVASCRIPT</p>
+            </div>
+            <div class="project2" onclick="showProjectDetails(2)">
+                <h3>Project 2</h3>
+                <h3><a href="https://github.com/JANARTHANAN-M-ux/Bus-Reservation-System/tree/main">Bus</a><br><br>Bus Reservation System</h3>
+                <p>Build using Java</p>
+            </div>
+            <div class="project3" onclick="showProjectDetails(3)">
+              <center>
+              <h3>Project 3</h3>
+              <h3><a href="https://github.com/JANARTHANAN-M-ux/STAY-POINTS---REACT">Stay Points</a><br><br>Hotel Room Booking System</h3>
+              <p>Build using React Js</p>
+            </center>
+          </div>
+          <!-- Add more projects as needed -->
+        </div>
+        <div class="more-work">
+          <p>
+             #for more info
+           </p>
+           <a href="https://github.com/JANARTHANAN-M-ux/Resume/blob/main/717821s116-Janarthanan%20M%20(2).pdf" target="blank">DOWNLOAD RESUME</a>
+         </div>
+     
+
+        <div class="project-details" id="projectDetails">
+            <span class="close-btn" onclick="closeProjectDetails()">&times;</span>
+            <h3 id="projectTitle"></h3>
+            <p id="projectDescription"></p>
+        </div>
+    </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p id="color">Feel free to reach out to me via email: janarthanan03072004@gmail.com</p>
+        <p class="links">Or find me on:</p>
+        <a href="https://www.linkedin.com/in/janarthanan-m-615b69263/" target="blank"><i class="fab fa-linkedin">
+            Linkedin</i></a>
+     
+        <a href="https://github.com/JANARTHANAN-M-ux" target="blank"><i class="fab fa-github"></i> Github</a>
+       
+        <a href="" target="blank"><i class="fab fa-twitter"> Twitter</i></a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Janarthanan M - Portfolio</p>
+    </footer>
+
+    <script 
+    >function showProjectDetails(projectId) {
+        const projectTitle = document.getElementById('projectTitle');
+        const projectDescription = document.getElementById('projectDescription');
+    
+        if (projectId === 1) {
+            projectTitle.textContent = 'Project 1';
+            projectDescription.textContent = 'Details of Project 1.';
+        } else if (projectId === 2) {
+            projectTitle.textContent = 'Project 2';
+            projectDescription.textContent = 'Details of Project 2.';
+        }
+        
+        document.getElementById('projectDetails').style.display = 'flex';
+    }
+    
+    function closeProjectDetails() {
+        document.getElementById('projectDetails').style.display = 'none';
+    }
+    </script>
+</body>
+</html>
